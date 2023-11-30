@@ -3,27 +3,21 @@ try {
     const numero1 = 10;
     const numero2 = 20;
 
-    // Verifica se o segundo número é zero
-    if (isNaN(numero1) || isNaN(numero2)) {
-      // Lança uma exceção personalizada se os números não forem válidos
-      throw new Error("Por favor, digite números válidos.");
+    
+    if (isNaN(numero1) || isNaN(numero2)) { // Verifica se o segundo número é zero      
+      throw new Error("Por favor, digite números válidos."); // Lança uma exceção personalizada se os números não forem válidos
     }
-
-    // Verifica se o segundo número é zero
-    if (numero2 === 0) {
-      // Lança uma exceção personalizada
-      throw new Error("Divisão por zero não é permitida.");
+    
+    if (numero2 === 0) { // Verifica se o segundo número é zero      
+      throw new Error("Divisão por zero não é permitida."); // Lança uma exceção personalizada
     }
-
-    // Realiza a divisão e exibe o resultado
-    let resultado = numero1 / numero2;
+    
+    let resultado = numero1 / numero2; // Realiza a divisão e exibe o resultado
     console.log(`Resultado da divisão: ${resultado}`);
 
-} catch (erro) {
-    // Captura e trata a exceção
-    console.error(`Ocorreu um erro: ${erro.message}`);
+} catch (erro) {    
+    console.error(`Ocorreu um erro: ${erro.message}`); // Captura e trata a exceção
 
-} finally {
-    // Bloco opcional que é executado sempre, ocorrendo ou não uma exceção
-    console.log("Execução finalizada.");
+} finally {    
+    console.log("Execução finalizada."); // Bloco opcional que é executado sempre, ocorrendo ou não uma exceção
 }
