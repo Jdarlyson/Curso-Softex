@@ -1,22 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt - BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <title>Operações Bancárias</title>
-  
+ 
 </head>
-<body>
+<body>  
+  <h1>Operações Bancárias</h1>  
+  <p>Saldo atual: <span id="saldo"></span></p> <!-- Exibição do Saldo -->
 
-  <h1>Operações Bancárias</h1>
+  
+  <form id="operacoesForm"> <!-- Formulário para Operações -->
 
-  <p>Saldo atual: <span id="saldo"></span></p>
-
-  <form id="operacoesForm">
+    <!-- Campo de entrada para o valor -->
     <label for="valor">Valor:</label>
     <input type="number" id="valor" name="valor" required>
     
+    <!-- Botões para realizar depósito e saque -->
     <button type="button" onclick="realizarDeposito()">Depósito</button>
     <button type="button" onclick="realizarSaque()">Saque</button>
   </form>
@@ -26,3 +28,4 @@
 
 </body>
 </html>
+
